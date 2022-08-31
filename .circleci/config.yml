@@ -6,7 +6,7 @@ workflows:
 jobs:
   runner-test-should-not-work:
     machine: true
-    resource_class: test-sebastian/testv7
+    resource_class: large
     steps:
       - run: echo "Hi I'm on Runners! "
       - run:
