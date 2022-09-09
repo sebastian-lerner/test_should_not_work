@@ -7,7 +7,7 @@ jobs:
   runner-test-should-not-work:
     machine: true
     resource_class: large
-    parallelism: 10 
+    parallelism: 100 
     steps:
       - run: echo "Hi I'm on Runners! "
       - run:
