@@ -11,4 +11,4 @@ jobs:
     steps:
       - run: echo "Hi I'm on Runners! "
       - run:
-          command: sleep 1
+          command: sleep 10
