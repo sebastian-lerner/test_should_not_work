@@ -7,8 +7,8 @@ jobs:
   runner-test-should-not-work:
     machine: true
     resource_class: large
-    parallelism: 10 
+    parallelism: 1 
     steps:
       - run: echo "Hi I'm on Runners! "
       - run:
-          command: sleep 20
+          command: sleep 200
