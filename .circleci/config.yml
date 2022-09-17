@@ -6,7 +6,7 @@ workflows:
 jobs:
   runner-test-should-not-work:
     machine: true
-    resource_class: large
+    resource_class: test-sebastian/testv7
     parallelism: 1 
     steps:
       - run: echo "Hi I'm on Runners! "
