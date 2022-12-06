@@ -1,14 +1,15 @@
 version: 2.1
+orbs:
+  python: circleci/python@2.1.1
 workflows:
   testing:
     jobs:
       - runner-test-should-not-work
 jobs:
   runner-test-should-not-work:
-    machine: true
-    resource_class: test-sebastian/testv7
-    parallelism: 1 
+    docker:
+      - image: cimg/python:3.11.0
     steps:
       - run: echo "Hi I'm on Runners! "
       - run:
-          command: sleep 200
+          command: python sample_test.py
