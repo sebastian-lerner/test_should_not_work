@@ -10,6 +10,10 @@ jobs:
     docker:
       - image: cimg/python:3.11.0
     steps:
+      - python/install-packages:
+          pkg-manager: pip
+      - run:
+          command: python
       - run: echo "Hi I'm on Runners! "
       - run:
           command: pytest
