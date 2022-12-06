@@ -12,4 +12,4 @@ jobs:
     steps:
       - run: echo "Hi I'm on Runners! "
       - run:
-          command: python sample_test.py
+          command: python sample_tests.py
